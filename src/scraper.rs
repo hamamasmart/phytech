@@ -54,6 +54,7 @@ fn get_scale_factor(category: &str, unit: Option<&str>) -> Option<f64> {
         ("SOIL", Some("C")) => Some(0.1),
         ("SOIL", Some("cBar")) => Some(0.1),
         ("IRRIGATION", Some("kPa")) => Some(2.0),
+        ("FRUIT", Some("mm")) => Some(0.001),
         _ => None,
     }
 }
